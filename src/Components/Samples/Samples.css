@@ -1,0 +1,30 @@
+.samples {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.samples h2 {
+    margin-bottom: 24px;
+}
+
+.samples-container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+
+    gap: 30px;
+}
+
+@media (max-width: 1400px) {
+    .samples-container {
+        grid-template: 1fr / 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .samples {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}

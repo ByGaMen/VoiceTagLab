@@ -1,0 +1,29 @@
+.selector {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 4px 8px;
+    border-radius: 10px;
+    gap: 8px;
+}
+.selector span {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+.selector p {
+    cursor: pointer;
+}
+
+.white {
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+.green {
+    background: linear-gradient(51.04deg, #0958FA 13.86%, #09FA32 93.66%);
+    color: rgba(255, 255, 255, 1);
+}
+.green button {
+    color: rgba(255, 255, 255, 1);
+}

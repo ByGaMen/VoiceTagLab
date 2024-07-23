@@ -1,0 +1,123 @@
+.pricing {
+    
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    font-family: 'Montserrat';
+    margin-bottom: 100px;
+}
+
+.pricing-grid-container {
+    display: grid;
+    grid-template: 0.9fr 1fr 1fr 1fr 1fr / 1.6fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.pricing-grid-container h2 {
+    align-self: center;
+    justify-self: center;
+}
+
+.pricing-row-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    white-space: nowrap;
+}
+
+.pricing-collumn-title {
+    padding: 8px 12px;
+}
+
+.pricing-collumn-title h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.pricing-collumn-title p {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 120%;
+}
+
+.pricing-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+
+.pricing-row-title,
+.pricing-collumn-title,
+.pricing-cell {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 1);
+}
+
+.pricing-collumn-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.pricing button {
+    margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+    .pricing {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1110px) {
+    .pricing button {
+        width: 90%;
+        padding: 21px 88px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing {
+        width: 90%;
+        padding: 16px 12px;
+    }
+
+    .pricing-grid-container {
+        display: grid;
+        grid-template: 0.9fr 1fr 1fr 1fr 1fr / 1.5fr 1fr 1fr 1fr 1fr;
+        gap: 8px;
+    }
+
+    .pricing h2 {
+        font-size: 18px;
+    }
+
+    .pricing-row-title {
+        font-size: 12px;
+    }
+
+    .pricing-collumn-title h4 {
+        font-size: 12px;
+    }
+
+    .pricing-collumn-title p {
+        font-size: 12px;
+    }
+
+    .pricing button {
+        padding: 21px 0;
+    }
+}

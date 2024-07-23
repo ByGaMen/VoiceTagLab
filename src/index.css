@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "HeadingNow";
+    src: url("../src/assets/fonts/Heading-Now-85-Medium-trial.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: rgba(16, 20, 30, 1);
+    color: white;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.font-hero-text {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-family: "HeadingNow";
+}
+
+.font-h2-text {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-family: 'HeadingNow';
+}
+
+.font-h3-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0;
+    font-family: 'Montserrat';
+}
+
+.font-large-text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-family: 'Montserrat';
+}
+
+.font-medium-text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0;
+    font-family: 'Montserrat';
+}
+
+.font-small-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-family: 'Montserrat';
+}
+.font-extra-small-text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-family: 'Montserrat';
+}
+
+.button-full {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 700;
+    color: white;
+    padding: 21px 98px;
+    border: none;
+    border-radius: 60px;
+    font-family: 'Montserrat';
+    background: linear-gradient(20deg, rgba(9, 88, 250, 1), rgba(9, 250, 50, 1));
+    margin-top: 60px;
+    cursor: pointer;
+    white-space: nowrap;
+}

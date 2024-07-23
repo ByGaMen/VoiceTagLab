@@ -1,0 +1,84 @@
+.hero {
+    width: 100%;
+    min-height: 655px;
+    background-image: url('../../assets/BG-hero.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 75px;
+    box-shadow:
+        inset 0 -40px 40px -10px rgba(0, 0, 0, 0.8),
+        0 40px 40px -10px rgba(0, 0, 0, 0.8);
+        
+}
+
+.hero-content {
+    position: absolute;
+    top: 160px;
+
+    margin-left: 10%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+}
+
+.hero-content h1 {
+    white-space: nowrap;
+}
+
+.hero-content h3 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 5px;
+    white-space: nowrap;
+}
+
+.hero-content p {
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 400;
+    font-family: "Montserrat";
+
+}
+
+
+
+@media (max-width: 600px) {
+    .hero {
+        width: 100%;
+        background-image: url('src/assets/BG-hero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 80%;
+        margin-bottom: 300px;
+    }
+
+    .hero-content {
+        top: 550px;
+        margin-left: 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 72px;
+    }
+
+    .hero-content h3 {
+        font-size: 18px;
+    }
+
+    .hero-content button {
+        width: 90%;
+        margin-top: 12px;
+        padding: 21px 0 ;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 68px;
+    }
+
+    
+}

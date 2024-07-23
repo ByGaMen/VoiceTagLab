@@ -1,0 +1,7 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 2560px;
+    margin: 0 auto;
+}

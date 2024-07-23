@@ -1,0 +1,258 @@
+.form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    min-height: 100%;
+    z-index: 9999999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+.form-container {
+    position: fixed;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(241, 241, 241, 1);
+    color: rgba(0, 0, 0, 1);
+    border-radius: 30px;
+    padding: 24px;
+
+    gap: 16px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+
+    width: 600px;
+    height: auto;
+}
+
+.form-container h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    font-family: 'HeadingNow';
+}
+
+.form-container>img {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.payment-container {
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.form-tags-container,
+.form-voices-container {
+    flex-wrap: wrap;
+}
+
+.form-tags-container,
+.form-voices-container,
+.payment-container,
+.payment-method,
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.form-tags-container,
+.form-voices-container {
+    gap: 10px;
+}
+
+.form-tags,
+.form-voices {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-tag {
+    border-radius: 10px;
+    padding: 4px 13px;
+}
+
+.payment-method {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 4px 6px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    gap: 4px;
+    height: 2.2rem;
+}
+
+.payment-method input {}
+
+.payment-method p {
+    font-size: 12px;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.payment h5 {
+    margin-bottom: 8px;
+}
+
+.white {
+    border: 1px solid rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+.black {
+    border: 1px solid rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.form-tags-container input {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: 'Montserrat';
+}
+
+.form-input-container {
+    margin-top: 5px;
+    padding: 0 4px 5px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 5px;
+}
+
+.form-input-container input {
+    background: transparent;
+
+    border: none;
+    width: 95%;
+    color: rgba(0, 0, 0, 1);
+    ;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+
+}
+
+.form-input-container input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.form-input-container img {
+    cursor: pointer;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 120%;
+    background: rgba(28, 27, 31, 1);
+    color: rgba(255, 255, 255, 0.7);
+    width: fit-content;
+    padding: 0 4px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price h6 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 12px;
+}
+
+.price-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-container .price-container-left {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 0 4px;
+}
+
+.price-container h2 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 100%;
+    grid-area: 1/ 1 / 3/ 2;
+}
+
+.price-container h4 {
+    grid-area: 1 / 2 / 3 / 3;
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.price-container p {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.2);
+    grid-area: 2 / 2 /3 /3;
+
+}
+
+.warning h5 {
+    color: rgb(198, 129, 129);
+}
+
+.price-container button {
+    margin-top: 0;
+    padding: 21px 54px;
+}
+
+@media (max-width: 1000px) {
+    .price-container {
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+    }
+
+    .price-container button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+
+    .form-container {
+
+        top: 0;
+        bottom: 0;
+
+        width: 100vw;
+        /* viewport width */
+        height: 100vh;
+        /* viewport height */
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        border-radius: 0;
+        padding: 16px;
+        gap: 12px;
+
+
+    }
+
+    .form-inputs {
+        gap: 12px;
+    }
+}

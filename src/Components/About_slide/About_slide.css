@@ -1,0 +1,13 @@
+.about_slide {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about_slide img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.about_slide h2 {
+    margin-bottom: 4px;
+}

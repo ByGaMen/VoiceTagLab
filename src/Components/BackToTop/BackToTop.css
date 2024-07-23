@@ -1,0 +1,20 @@
+.back-to-top {
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+@media (max-width: 1100px) {
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .back-to-top {
+        width: 30px;
+        height: 30px;
+    }
+}
