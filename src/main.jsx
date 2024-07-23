@@ -7,7 +7,7 @@ import ScreenContexProvider from './Contex/ScreenContex.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
+    <BrowserRouter basename="/VoiceTagLab">
         <React.StrictMode>
             <ScreenContexProvider>
                 <App />
